@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+    <script>
+        let arr = [23,21,43,54,22,11,44,66];
+        // for(let item of arr){
+        //   document.write(item ); 
+        //   document.write("<div></div>");
+        // }
+        // let x=3;
+        // document.write(arr[3]); 
+        function getElement(){
+            let el= document.getElementById('element').value
+            if(el < arr.length && typeof parseInt(el)=== "number" && el >= 0){
+            alert(arr[el]);
+            } else {
+                alert("please enter the valid input")
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <h1>Array</h1>
+  <input type="text" id="element" placeholder="Enter the index">
+  <button onclick="getElement()">GetElement</button>
+</body>
+</html>
