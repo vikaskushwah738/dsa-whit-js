@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Array</title>
+    <script>
+        let arr1 = [13, 21, 29, 41, 52, 70];
+        let arr2 = [3, 25, 27, 65, 67];
+        let arr3 = [];
+        let d1 = 0;
+        let d2 = 0;
+        let d3 = 0;
+        while (d1 < arr1.length && d2 < arr2.length) {
+            if (arr1[d1] < arr2[d2]) { 
+                arr3[d3]= arr1[d1];
+                  d1++;
+            } else { 
+                arr3[d3]= arr2[d2];
+                  d2++;
+            }
+            d3++;
+        }
+        while(d1 < arr1.length) {
+            arr3[d3]= arr1[d1];
+                  d1++;
+                  d3++;
+        }
+        console.log(arr3);
+    </script>
+</head>
+
+<h1>marge array</h1>
+<body>
+</body>
+
+</html>
