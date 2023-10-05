@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search</title>
+    <script>
+        let arr = [13, 21, 23, 11, 12, 34, 54, 14, 35];
+        //  let element=11;
+        //  for (let i = 0; i < arr.length; i++) {
+        //     if(arr[i]===element){
+        //         console.log("element found in array "+i);
+        //         break;
+        //     }
+        // }
+        function searchEl() {
+            let element = document.getElementById('searche').value;
+            element =parseInt(element);
+            let index=undefined;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === element) {
+                   index =i
+                    break;
+                }
+            }
+            console.log(index);
+           // console.log(arr.indexOf(element)) 
+           //arr.splice(2,1);
+           //console.log(arr)
+         }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Search element" id="searche">
+    <button onclick="searchEl()">Search</button>
+</body>
+
+</html>
