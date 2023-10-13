@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array secand max number</title>
+</head>
+
+<body>
+    <script>
+        function secondMax(arr){
+            //Write your code here
+            //return the second mazimum number
+            const uniqueArr = Array.from(new Set(arr));
+            uniqueArr.sort((a, b) => {
+                return b - a;
+            });
+            if (uniqueArr.length >= 2) {
+                return uniqueArr[1];
+            } else {
+                return -1;
+            }
+        }
+        console.log(secondMax([23,4,32,34,45,67,12,33,34]));
+
+    </script>
+</body>
+
+</html>
