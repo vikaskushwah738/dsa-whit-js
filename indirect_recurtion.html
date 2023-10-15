@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indirect Recurtion</title>
+    <script>
+        let money = 100;
+        let totalApple = 0;
+        function buyApple(x) {
+            if (x > 0) {
+                totalApple++;
+                console.log("I have",x,"Rs",totalApple);
+                buyMore(x);
+            } else {
+                console.log("you don't have money",totalApple);
+            }
+        }
+        function buyMore(x) {
+        
+            buyApple(x-5);
+           //  console.log("Buy more apple ",x);
+        }
+        buyApple(money);
+    </script>
+</head>
+
+<body>
+<h1>Indirect Recurtion</h1>
+</body>
+
+</html>
